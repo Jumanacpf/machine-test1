@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .view{
+        text-align: center;
+    }
+</style>
+<body>
+<div class="view">
+<h1>Products</h1>
+
+
+{% for i in products %}
+<p>Product Name : {{i.prdct_name}}</p>
+
+<p>Price : {{i.price}}</p>
+
+<p>Descriprion : {{i.descriprion}}</p>
+{% endfor %}
+</div>
+</body>
+</html>
